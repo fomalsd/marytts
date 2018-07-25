@@ -11,14 +11,14 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>marytts-lang-de</module>
+		<!--<module>marytts-lang-de</module>-->
 		<module>marytts-lang-en</module>
-		<module>marytts-lang-te</module>
-		<module>marytts-lang-tr</module>
-		<module>marytts-lang-ru</module>
-		<module>marytts-lang-it</module>
-		<module>marytts-lang-fr</module>
-		<module>marytts-lang-sv</module>
-		<module>marytts-lang-lb</module>
+		<!--<module>marytts-lang-te</module>-->
+		<!--<module>marytts-lang-tr</module>-->
+		<!--<module>marytts-lang-ru</module>-->
+		<!--<module>marytts-lang-it</module>-->
+		<!--<module>marytts-lang-fr</module>-->
+		<!--<module>marytts-lang-sv</module>-->
+		<!--<module>marytts-lang-lb</module>-->
 	</modules>
 </project>

@@ -234,10 +234,16 @@
 				<version>5.1.16</version>
 			</dependency>
 
+			<!--<dependency>-->
+				<!--<groupId>org.codehaus.groovy</groupId>-->
+				<!--<artifactId>groovy-all</artifactId>-->
+				<!--<version>2.4.5</version>-->
+			<!--</dependency>-->
+
 			<dependency>
-				<groupId>org.codehaus.groovy</groupId>
-				<artifactId>groovy-all</artifactId>
-				<version>2.4.5</version>
+				<groupId>com.tagtraum</groupId>
+				<artifactId>ffsampledsp-complete</artifactId>
+				<version>0.9.28</version>
 			</dependency>
 
 			<dependency>
@@ -401,6 +407,17 @@
 			</snapshots>
 			<url>https://jcenter.bintray.com</url>
 		</repository>
+		<repository>
+			<id>nexus</id>
+			<name>nexus</name>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<url>http://central.maven.org/maven2/</url>
+		</repository>
 	</repositories>
 
 	<pluginRepositories>
@@ -408,6 +425,11 @@
 			<id>central</id>
 			<name>jcenter</name>
 			<url>https://jcenter.bintray.com</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>nex</id>
+			<name>nex</name>
+			<url>http://central.maven.org/maven2/</url>
 		</pluginRepository>
 	</pluginRepositories>
 
@@ -538,20 +560,20 @@
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
-					<compilerId>groovy-eclipse-compiler</compilerId>
+					<!--<compilerId>groovy-eclipse-compiler</compilerId>-->
 				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.codehaus.groovy</groupId>
-						<artifactId>groovy-eclipse-compiler</artifactId>
-						<version>2.9.1-01</version>
-					</dependency>
-					<dependency>
-						<groupId>org.codehaus.groovy</groupId>
-						<artifactId>groovy-eclipse-batch</artifactId>
-						<version>2.3.7-01</version>
-					</dependency>
-				</dependencies>
+				<!--<dependencies>-->
+					<!--<dependency>-->
+						<!--<groupId>org.codehaus.groovy</groupId>-->
+						<!--<artifactId>groovy-eclipse-compiler</artifactId>-->
+						<!--<version>2.9.1-01</version>-->
+					<!--</dependency>-->
+					<!--<dependency>-->
+						<!--<groupId>org.codehaus.groovy</groupId>-->
+						<!--<artifactId>groovy-eclipse-batch</artifactId>-->
+						<!--<version>2.3.7-01</version>-->
+					<!--</dependency>-->
+				<!--</dependencies>-->
 			</plugin>
 
 			<plugin>
@@ -730,7 +752,7 @@
 					</reportSets>
 				</configuration>
 			</plugin> -->
-			
+
 			<!-- Check style guidelines -->
 			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -750,14 +772,14 @@
 					<excludeFilterFile>findbugs-excludes.xml</excludeFilterFile>
 				</configuration>
 			</plugin> -->
-			
+
  			<!-- Measure the test code coverage: -->
 			<!-- <plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>emma-maven-plugin</artifactId>
 				<version>1.0-alpha-3</version>
 			</plugin> -->
-			
+
 			<!-- Web page presenting unit test results: -->
 			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -771,7 +793,7 @@
 					</reportSet>
 				</reportSets>
 			</plugin> -->
-			
+
 			<!-- Number of lines of code: -->
 			<!-- <plugin>
 				<groupId>org.codehaus.mojo</groupId>
